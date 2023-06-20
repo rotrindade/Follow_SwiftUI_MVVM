@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		616EA0F92A41F2EC003BB09B /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616EA0F82A41F2EC003BB09B /* ProfileViewModel.swift */; };
+		616EA0FB2A41F303003BB09B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616EA0FA2A41F303003BB09B /* User.swift */; };
 		61D192422A41E4F5005D8F16 /* Follow_SwiftUI_MVVMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D192412A41E4F5005D8F16 /* Follow_SwiftUI_MVVMApp.swift */; };
 		61D192442A41E4F5005D8F16 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D192432A41E4F5005D8F16 /* ContentView.swift */; };
 		61D192462A41E4F6005D8F16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61D192452A41E4F6005D8F16 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		616EA0F82A41F2EC003BB09B /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		616EA0FA2A41F303003BB09B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		61D1923E2A41E4F5005D8F16 /* Follow_SwiftUI_MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Follow_SwiftUI_MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61D192412A41E4F5005D8F16 /* Follow_SwiftUI_MVVMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follow_SwiftUI_MVVMApp.swift; sourceTree = "<group>"; };
 		61D192432A41E4F5005D8F16 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				61D192412A41E4F5005D8F16 /* Follow_SwiftUI_MVVMApp.swift */,
+				616EA0FA2A41F303003BB09B /* User.swift */,
+				616EA0F82A41F2EC003BB09B /* ProfileViewModel.swift */,
 				61D192432A41E4F5005D8F16 /* ContentView.swift */,
 				61D192452A41E4F6005D8F16 /* Assets.xcassets */,
 				61D192472A41E4F6005D8F16 /* Follow_SwiftUI_MVVM.entitlements */,
@@ -139,6 +145,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				616EA0FB2A41F303003BB09B /* User.swift in Sources */,
+				616EA0F92A41F2EC003BB09B /* ProfileViewModel.swift in Sources */,
 				61D192442A41E4F5005D8F16 /* ContentView.swift in Sources */,
 				61D192422A41E4F5005D8F16 /* Follow_SwiftUI_MVVMApp.swift in Sources */,
 			);

@@ -13,26 +13,11 @@
 
 import SwiftUI
 
-//MARK: - MODEL
-struct User {
-    var picture: String
-    var name: String
-    var nick: String
-    var followers: Double
-}
-
-//MARK: - VIEWMODEL
-struct ProfileViewModel {
-    var user = User(picture: "perfil_stevejobs",
-                    name: "Steve Jobs",
-                    nick: "@steve_jobs",
-                    followers: 22643)
-}
 
 //MARK: - VIEW
 struct ProfileView: View {
     
-    var viewModel = ProfileViewModel()
+    @State var viewModel = ProfileViewModel()
         
     var body: some View {
         
@@ -78,6 +63,7 @@ struct ProfileView: View {
             }
             .padding(20)
         }
+
         
     }
 }
