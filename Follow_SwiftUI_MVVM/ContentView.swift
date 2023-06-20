@@ -13,6 +13,7 @@
 
 import SwiftUI
 
+//MARK: - MODEL
 struct User {
     var picture: String
     var name: String
@@ -20,30 +21,36 @@ struct User {
     var followers: Double
 }
 
-struct ProfileView: View {
-    
+//MARK: - VIEWMODEL
+struct ProfileViewModel {
     var user = User(picture: "perfil_stevejobs",
                     name: "Steve Jobs",
                     nick: "@steve_jobs",
                     followers: 22643)
+}
+
+//MARK: - VIEW
+struct ProfileView: View {
     
+    var viewModel = ProfileViewModel()
+        
     var body: some View {
         
         //Perfil
         VStack {
-            Image(user.picture)
+            Image(viewModel.user.picture)
                 .resizable()
                 .frame(width: 250, height: 250)
                 .padding(.bottom, 10)
             
-            Text(user.name)
+            Text(viewModel.user.name)
                 .font(.system(size: 50, weight: .bold))
             
-            Text(user.nick)
+            Text(viewModel.user.nick)
                 .font(.system(size: 23, weight: .regular))
                 .foregroundStyle(.gray)
             
-            Text("\(user.followers)")
+            Text("\(viewModel.user.followers)")
                 .font(.system(size: 70, weight: .light))
                 .padding(40)
             
