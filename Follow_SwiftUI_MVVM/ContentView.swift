@@ -13,24 +13,37 @@
 
 import SwiftUI
 
+struct User {
+    var picture: String
+    var name: String
+    var nick: String
+    var followers: Double
+}
+
 struct ProfileView: View {
+    
+    var user = User(picture: "perfil_stevejobs",
+                    name: "Steve Jobs",
+                    nick: "@steve_jobs",
+                    followers: 22643)
+    
     var body: some View {
         
         //Perfil
         VStack {
-            Image("profile_stevejobs")
+            Image(user.picture)
                 .resizable()
                 .frame(width: 250, height: 250)
                 .padding(.bottom, 10)
             
-            Text("Steve Jobs")
+            Text(user.name)
                 .font(.system(size: 50, weight: .bold))
             
-            Text("@stevejobs")
+            Text(user.nick)
                 .font(.system(size: 23, weight: .regular))
                 .foregroundStyle(.gray)
             
-            Text("22.643K")
+            Text("\(user.followers)")
                 .font(.system(size: 70, weight: .light))
                 .padding(40)
             
